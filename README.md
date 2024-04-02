@@ -8,15 +8,17 @@
     
     ```shell
     # 查看本库支持的脚本链
-    python -m webcoreframe --help
+    webcoreframe --help
     # 快速创建一个后端项目
-    python -m webcoreframe create-project
+    webcoreframe create-project
     # 快速创建一个项目的app
-    python -m webcoreframe create-app
+    webcoreframe create-app
     # 快速创建一个用户
-    python -m webcoreframe create-user
+    webcoreframe create-user
     # 快速收集前端静态文件
-    python -m webcoreframe collect-static
+    webcoreframe collect-static
+    # 快速启动应用
+    webcoreframe run
     ```
 
 2. 内部自带电池
@@ -33,6 +35,7 @@
 
     - [80%]封装orm
         - 读写分离
+        - 动态分表
     - [80%] 封装redis
     - [90%] 封装log
     - [90%] 封装插件
@@ -50,6 +53,15 @@
 
 ### 二、CHANGELOG
 
+- v1.3.20240402141838
+
+    ```markdown
+    1. 更新授权中间件
+    2. 默认开启接口过滤
+    3. 移除flask_restful,避免无法命中error_code
+    4. 更新系统总览图表-支持拖动查看时间轴
+    5. 后台支持动态分表过滤查询
+    ```
 - v1.2.20240226090040
 
     ```markdown
